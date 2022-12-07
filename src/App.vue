@@ -1,26 +1,43 @@
 <script>
-import CabecalhoComp from "./components/CabecalhoComp.vue";
+import HeaderView from "@/components/HeaderView.vue";
+import CardFilme from "./components/CardFilme.vue";
 import FilmesAPI from "@/api/filmes";
 const filmeApi = new FilmesAPI();
 export default {
-  components: { CabecalhoComp },
+  components: { HeaderView, CardFilme },
   data() {
     return {
       destaques: [],
+      populares: [],
     };
   },
   async created() {
     this.destaques = await filmeApi.buscarDestaques();
+    this.populares = await filmeApi.buscarPopulares();
   },
 };
 </script>
 
 <template>
-  <CabecalhoComp />
+  <HeaderView />
 
-  <main>
-    <RouterView />
-  </main>
+  <h2>Destaques</h2>
+  <div class="row">
+    <CardFilme
+      v-for="filme in destaques.slice(0, 6)"
+      :key="filme.id"
+      :filme="filme"
+    />
+  </div>
+
+  <h2>Filmes Populares</h2>
+  <div class="row">
+    <CardFilme
+      v-for="filme in populares.slice(0, 6)"
+      :key="filme.id"
+      :filme="filme"
+    />
+  </div>
 </template>
 
 <style>
@@ -40,45 +57,3 @@ img {
   overflow-y: auto;
 }
 </style>
-
-<!-- <h2>Destaques</h2>
-    <div class="row">
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-    </div>
-
-    <h2>Filmes</h2>
-    <div class="row">
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-    </div>
-
-    <h2>Séries</h2>
-    <div class="row">
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-      <img src="./assets/imagem.jpg" alt="filme" />
-    </div> -->

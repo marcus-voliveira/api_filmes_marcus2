@@ -22,9 +22,9 @@ export default {
 <template>
   <header>
     <div>
-      <RouterLink to="/"><span>VE Videos</span></RouterLink>
+      <span>VE Videos</span>
       <span>|</span>
-      <RouterLink to="/filmes"><span>Filmes</span></RouterLink>
+      <span>Filmes</span>
       <span>|</span>
       <select @change="mostraGenero" v-model="generoatual">
         <option value="" disabled>Gêneros</option>
@@ -32,9 +32,6 @@ export default {
           {{ genre.name }}
         </option>
       </select>
-    </div>
-    <div>
-      <RouterLink to="/login"><span class="teste">Login</span></RouterLink>
     </div>
   </header>
 </template>
