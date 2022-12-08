@@ -2,6 +2,7 @@
 import CardFilme from "@/components/CardFilme.vue";
 import FilmesAPI from "@/api/filmes";
 const filmeApi = new FilmesAPI();
+
 export default {
   components: { CardFilme },
   data() {

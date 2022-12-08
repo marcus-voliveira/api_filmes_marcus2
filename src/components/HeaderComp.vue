@@ -25,7 +25,7 @@ a {
 
 header {
   display: flex;
-  background-color: rgb(55, 55, 55);
+  background-color: rgb(39, 38, 38);
   border: 3px;
   border-color: #e1e130;
   border-radius: 25px;
