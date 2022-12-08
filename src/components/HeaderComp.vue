@@ -1,13 +1,28 @@
 <script></script>
 <template>
   <header>
-    <i><h1>VE Videos</h1></i>
-    <i><h1>Filmes</h1></i>
+    <RouterLink to="/">VE Videos</RouterLink>
+    <RouterLink to="/filmes">Filmes</RouterLink>
     <RouterLink to="/sobrenos">Sobre Nós</RouterLink>
   </header>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  font-size: 35px;
+  color: white;
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 header {
   display: flex;
   background-color: rgb(55, 55, 55);
@@ -27,7 +42,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
   font-size: 35px;
   color: white;
   padding: 40px;
