@@ -1,16 +1,28 @@
 <script></script>
 
 <template>
-  <h1>Sobre Nós</h1>
+  <div class="container">
+    <h1>Sobre Nós</h1>
 
-  <p></p>
+    <p>
+      Somos um grupo de estudantes do Instituto Federal Catarinense do segundo
+      ano do ensino médio. 
+    </p>
+
+    <p>
+      Neste trabalho temos como objetivo simplificar a busca por filmes para o
+      público geral, utilizando uma API no processo.
+    </p>
+  </div>
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
 * {
-  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 38, 38);
+  border-radius: 30px;
 }
 
 h1 {
@@ -21,7 +33,9 @@ h1 {
 }
 
 p {
+  color: white;
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 20px;
+  padding: 30px;
 }
 </style>
