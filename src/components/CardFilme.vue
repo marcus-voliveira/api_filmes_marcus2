@@ -5,9 +5,16 @@ export default {
     getImgUrl(poster_path) {
       return `https://image.tmdb.org/t/p/w500${poster_path}`;
     },
+    MostraFilme(filme) {
+      this.$router.push(`filme/${filme.id}`);
+    },
   },
 };
 </script>
 <template>
-  <img :src="getImgUrl(filme.poster_path)" alt="filme" />
+  <img
+    @click="MostraFilme(filme)"
+    :src="getImgUrl(filme.poster_path)"
+    alt="filme"
+  />
 </template>
