@@ -7,7 +7,7 @@ import HeaderComp from "@/components/HeaderComp.vue";
   <RouterView />
 </template>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 a,

@@ -37,4 +37,32 @@ export default {
   </div>
 </template>
 
-<style></style>
+<style scoped>
+
+.infofilme {
+  margin: 60px;
+  padding: 40px;
+  color: white;
+  background-color: rgb(39, 38, 38);
+  border-radius: 30px;
+}
+
+.infos {
+  width: 450px;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+</style>
+
+
+
+
+

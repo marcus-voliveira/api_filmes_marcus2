@@ -7,18 +7,20 @@
   </header>
 </template>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
 * {
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
 }
 
 a {
+  font-family: "Montserrat", sans-serif;
   font-size: 35px;
   color: white;
-  padding: 30px;
+  margin: 6px;
+  padding: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -33,7 +35,7 @@ header {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 35px;
   color: white;
   padding: 40px;
@@ -44,8 +46,11 @@ h1 {
 h2 {
   font-size: 35px;
   color: white;
-  padding: 40px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: rgb(39, 38, 38);
+  display: inline-block;
+  border-radius: 20px;
 }
 </style>
