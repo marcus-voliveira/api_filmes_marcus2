@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import SobreView from "../views/SobreView.vue";
-import FilmesView from "../views/FilmesView.vue";
+import GenerosView from "../views/GenerosView.vue";
 import HomeView from "../views/HomeView.vue";
 import FilmeInfo from "../views/FilmeInfo.vue";
 const router = createRouter({
@@ -12,9 +12,9 @@ const router = createRouter({
       component: SobreView,
     },
     {
-      path: "/filmes",
-      name: "filmes",
-      component: FilmesView,
+      path: "/generos",
+      name: "generos",
+      component: GenerosView,
     },
     {
       path: "/",

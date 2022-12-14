@@ -38,13 +38,24 @@ export default {
 </template>
 
 <style scoped>
-
 .infofilme {
   margin: 60px;
   padding: 40px;
   color: white;
   background-color: rgb(39, 38, 38);
   border-radius: 30px;
+}
+img {
+  border-radius: 30px;
+}
+
+.poster-info {
+  display: flex;
+}
+
+.StyleRating {
+  border-radius: 360px;
+  background-color: #e1e130;
 }
 
 .infos {
@@ -53,6 +64,7 @@ export default {
 
 p {
   font-family: "Inter", sans-serif;
+  margin-left: 70px;
 }
 
 h1 {
@@ -61,8 +73,3 @@ h1 {
   margin-bottom: 40px;
 }
 </style>
-
-
-
-
-

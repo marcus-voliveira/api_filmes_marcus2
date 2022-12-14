@@ -2,7 +2,7 @@
 <template>
   <header>
     <RouterLink to="/">VE Videos</RouterLink>
-    <RouterLink to="/filmes">Filmes</RouterLink>
+    <RouterLink to="/filmes">Gêneros</RouterLink>
     <RouterLink to="/sobrenos">Sobre Nós</RouterLink>
   </header>
 </template>
